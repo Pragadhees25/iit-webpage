@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IIT-bombay</title>
+<style type="text/css">
+body{
+background-color:#4b4e52 ;
+margin:auto;
+width: 70%;
+clear: both;
+}
+.mainheader img{
+width: 15%;
+height: auto;
+margin: 0 auto;
+margin-top: 25px;
+background-color: #4b4e52 ;
+}
+.topnav{
+  max-width: 1300px;
+  margin: auto;
+  overflow: hidden;
+  background-color: black;
+  padding-top: 10px;
+}
+.topnav a{
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font size: 17px;
+}
+.topnav a:hover{
+  background-color: black;
+  color: grey;
+}
+.topnav  a.active{
+  background-color: black;
+  color: white;
+ 
+}
+.topnav button{
+  background-color: black;
+  color: white;
+  padding: 14px 16px;
+  border: none;
+   font-family: Arial,Helvetica,sans-serif;
+  background:none;
+  font-size: 16px;
+
+
+}
+.dropdown{
+  float: left;
+  overflow: hidden;
+
+}
+
+.dropdowncontent{
+  display: none;
+  position: absolute;
+  background-color:#756641;
+  min-width: 160px;
+  
+
+}
+.dropdowncontent a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+
+}
+.dropdowncontent a:hover{
+  background-color: #b39a5b;
+  color: black;
+}
+.dropdown:hover .dropdowncontent{
+display: block;
+}
+
+.footer{
+background-color: darkslategray;
+max-width: 600px;
+margin: 0 auto;
+color: white;
+}
+
+}
+</style>
+</head>
+<body>
+<div class="mainheader">
+<img src="logo.png">
+<marquee width= 100% behavior="slide" direction="right" height=50px><h1><font color="#D4DAD9 ">INDIAN INSTITUTE OF TECHNOLOGY BOMBAY</font></h1></marquee>
+<hr width="100%">
+
+
+</div>
+<div class="topnav">
+  <a class="active" href="iit.html">Home</a>
+  <div class="dropdown"> 
+    <button class="drpbtn">Institute
+      <i class="down"></i>
+    </button>
+    <div class="dropdowncontent">
+      <a href="header.html">About IIT</a>
+      <a href="#">IIT videos</a>
+    </div>
+  </div>
+    <div class="dropdown">
+      <button class="drpbtn">Department
+        <i class="down"></i>
+      </button>
+      <div class="dropdowncontent">
+      <a href="dept.html">Computer Science Engineering</a> 
+     <a href="dept.html">Electrical Engineering</a>
+    <a href="dept.html">Civil Engineering</a>
+   <a href="dept.html">Mechanical Engineering</a>
+  <a href="dept.html">Bio Medical Engineering</a>
+</div>
+      
+    </div>
+    <div class="dropdown">
+      <button class="drpbtn">Placement
+        <i class="down"></i></button>
+          <div class="dropdowncontent">
+            <a href="about.html">Recruiters</a>
+            <a href="placementreport.html">Placement Reports</a>
+
+          </div>
+    </div>
+    <a href="contact.html">Contact</a>
+  </div>
+<div class="rprt">
+<br><br><h3>Check the Placement Statistical Report</h3>
+<iframe id="myFrame" style="display:none" width="900" height="500"></iframe>
+<br>&nbsp&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<button onclick="rprt()"><strong>Check Report</strong></button>
+<script type="text/javascript">
+function rprt()
+{
+var omyFrame = document.getElementById("myFrame");
+omyFrame.style.display="block";
+omyFrame.src = "report.pdf";
+}
+</script>
+</div>
+
+<div class="footer">
+<p><center>&copy;2020, Site developed by <b>Pragadhees</b></center></p>
+
+</div>
+
+</body>
+</html>
